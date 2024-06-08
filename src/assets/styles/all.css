@@ -52,7 +52,8 @@ table {
     box-sizing: border-box;
 }
 body {
-  font-family: "Noto-Sans", sans-serif;
+  font-family: "Noto Sans TC", sans-serif;
+  line-height: 1.5;
 }
 
 a {
@@ -73,6 +74,14 @@ a {
 .header-logo{
 	margin-right: 30.5%;
 	
+}
+.header-logo-title{
+	background-image: url(/src/assets/images/logo.svg);
+	width: 90px;
+	height: 40px;
+	text-indent: 101%;
+	white-space: nowrap;
+	overflow: hidden;
 }
 
 /* desktop type */
@@ -133,7 +142,7 @@ a {
 	height: 40px;
 	background-size: cover;
 	background-position: center;
-	background-image: url(/src/assets/images/mobile-selection-icon.png);
+	background-image: url(src/assets/images/mobile-selection-icon.png);
 	display: none;
 }
 
@@ -149,7 +158,7 @@ a {
 }
 
 .slogan-box1{
-	width: 670px;
+	max-width: 670px;
 }	
 
 .quote2{
@@ -304,18 +313,19 @@ a {
 	font-size: 16px;
 	font-weight: 400;
   }
+
+  /* content-button */
 .pages-button{
 	display: flex;
 	gap: 16px;
-
-	li a{
+}
+.pages-button li a{
 		font-size: 24px;
 		padding:2px 13px 2px 13px;
 		text-align: center;
 		color: #3B3B3B	;
 	}
-}
-.botton1:active{
+.pages-button li a:hover{
 	border-radius: 4px;
 	background-color: #1E1E1E;
 	color: #FFFFFF;
@@ -351,24 +361,17 @@ a {
 	flex-direction: column;
 	gap: 24px;
 }
-.footer-social-m li{
+.footer-social-m li a{
 	display: flex;
 	align-items: center;
 	padding: 8px 24px 8px 24px;
 	gap: 8px;
 }
 
-.footer-social-m .box1{
-	background-color: 
-	#000000;
-	border-radius: 8px;
-	p{
-		color:  #FFFFFF;
-		font-size: 20px;
-	}
+
 	
-}
-.footer-social-m .box2{
+
+.footer-social-m li a{
 	background-color: 
 	#FFFFFF;
 	border: 1px solid #C1C1C1 ;
@@ -377,10 +380,16 @@ a {
 		color:  #3B3B3B;
 		font-size: 20px;
 	}
-	
 }
-
-
+.footer-social-m li a:hover{
+	background-color: 
+	#000000;
+	border-radius: 8px;
+	p{
+		color:  #FFFFFF;
+		font-size: 20px;
+	}
+}
 
 
 
@@ -469,26 +478,26 @@ a {
 			gap: 48px;
 		}
 	.shadow1 {
-			max-width: 351px;
+			/* max-width: 351px; */
 			height: auto;
 			border: 0.55px solid #f1f1f1;
 			border-radius: 4px;
 			img{
 				width:100%;
-				height:100%;
+				height:auto;
 				border-radius: 3.5px;
 			}
 		}
 		
 	.shadow2 {
-			max-width: 351px;
+			/* max-width: 351px; */
 			height: auto;
 			border: 0.55px solid #D1BD84;
 			;
 			border-radius: 4px;
 			img{
 				width:100%;
-				height:100%;
+				height:auto;
 				border-radius: 3.5px;
 			}
 		}
